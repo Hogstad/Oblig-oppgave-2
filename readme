@@ -1,0 +1,32 @@
+Oppgave
+
+Oppgaven tar utgangspunkt i koden som er vist nederst på siden. Dette er kode som lager et stolpediagram basert på en liste av tall - hvor hvert tall er mellom 1 og 10. Oppgaven består i å fullføre applikasjonen. 
+Den er skrevet etter Model View Controller-patternet - og koden du legger til skal også være det. 
+
+x: Gjør det mulig å velge en stolpe.
+x: Man skal kunne velge en stolpe ved å klikke på den.
+x: Den skal da få en svart ramme rundt seg, og i tillegg skal teksten oppdateres til for eksempel "Valgt stolpe: 1".
+x: Hvis man klikker på den stolpen som allerede er valgt, skal deretter ingen stolpe være valgt.
+
+x: Knappene "Endre valgt stolpe" og "Fjerne valgt stolpe" skal være disablet når ingen stolpe er valgt - og enablet ellers. 
+x: Når man trykker på "Fjerne valgt stolpe", skal den valgte stolpen fjernes. Alle stolper som var til høyre for denne, flyttes da ett hakk til venstre. 
+x: Det vil si at om numbers er [1, 2, 3, 4, 5] - og så fjerner stolpen i midten, så skal numbers etter det være  [1, 2, 4, 5].
+
+x: Når man trykker på "Endre valgt stolpe", skal den valgte stolpen endre verdien som brukeren har skrevet i input-boksen. Det er kun 1,2,3,4,5,6,7,8, 9 og 10 som er gyldige verdier. 
+x: Dersom brukeren ikke har skrevet en gyldig verdi i input-boksen, skal det gis en feilmelding. 
+
+x: Når man trykker på "Legg til stolpe", skal det legges til et nytt tall sist i listen (og en ny stolpe lengst til høyre i stolpediagrammet) 
+x: med verdien som brukeren har skrevet i input-boksen. Dersom brukeren ikke har skrevet en gyldig verdi i input-boksen, skal det gis en feilmelding. 
+
+
+x: Lag enhetstester av controller-funksjonene! Altså funksjonene for å:
+x: velge stolpe (teste både velge den som er valgt og en annen)
+x: slette en stolpe
+x: endre en stolpe
+x: legge til en stolpe
+
+
+
+deepEqual måtte bli brukt der jeg sjekket tester om to objekter(Numbers), og deres underordnede objekter[7, 3, 1, 5, 10], er like
+Metoden assert.deepEqual () tester om to objekter, og deres underordnede objekter, er like ved hjelp av operatoren ==
+Hvis de to objektene ikke er like, forårsakes en påstandssvikt, og programmet avsluttes.
