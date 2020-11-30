@@ -14,7 +14,7 @@
     <script>
 
     // Model
-    let numbers = [7, 3, 1, 5, 8]; // Måtte ha numbers innenfor brakettene for at unit.test 2 skulle fungere.
+    let numbers = [1, 2, 3, 4, 5]; // Måtte ha numbers innenfor brakettene for at unit.test 2 skulle fungere.
     // View
     function show() {
     // Controller
@@ -34,25 +34,25 @@
       });
 
       QUnit.test('Fjerne stolpe', function(assert) {
-          numbers = [7, 3, 1, 5, 8]
+          numbers = [1, 2, 3, 4, 5]
           valgtStolpe = 4;
           fjærnStolpe();
-          assert.deepEqual(numbers, [7, 3, 1, 5]);
+          assert.deepEqual(numbers, [1, 2, 3, 4]);
       });
 
       QUnit.test('Endre verdi på en stolpe', function(assert) {
-          numbers = [7, 3, 1, 5, 8];
+          numbers = [1, 2, 3, 4, 5];
           valgtStolpe = 4; 
           inputValue = 10; 
           redigerStolpe()
-          assert.deepEqual(numbers, [7, 3, 1, 5, 10]);
+          assert.deepEqual(numbers, [1, 2, 3, 4, 10]);
       });
 
       QUnit.test('Legge til en ny stolpe', function(assert) {
-          numbers = [7, 3, 1, 5, 8];
-          inputValue = 1; 
+          numbers = [1, 2, 3, 4, 5];
+          inputValue = 6; 
           leggTilStolpe()
-          assert.deepEqual(numbers, [7, 3, 1, 5, 8, 1]);
+          assert.deepEqual(numbers, [7, 3, 1, 5, 8, 6]);
       });
      });
 
