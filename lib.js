@@ -3,7 +3,7 @@ var contentDiv = document.getElementById('content');
 let feilMelding = '';
 
 // model
-let numbers = [7, 3, 1, 5, 8];
+let numbers = [1, 2, 3, 4, 5];
 let valgtStolpe; // Variabel for hvilken stolpe som er valgt
 let valgtStolpeValue; // Variabel for verdi av valgt stolpe
 let selectedBar; //  
